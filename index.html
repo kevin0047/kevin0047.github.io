@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .project {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>안녕하세요, 저는 남영빈입니다</h1>
+            <p>웹 개발자 | 백엔드 개발자 | 풀스택 개발자</p>
+        </div>
+
+        <div class="project">
+            <h2>프로젝트 1</h2>
+            <p>사이트입니다.</p>
+            
+            <!-- YouTube 동영상 임베드 -->
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/c5FW7wBjHHk" 
+                        frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <p><strong>사용 기술:</strong> React, Node.js, MongoDB</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/username/project1">링크</a></p>
+        </div>
+
+        <div class="project">
+            <h2>프로젝트 2: 앱</h2>
+            <p>앱입니다.</p>
+            
+            <!-- 이미지 추가 -->
+            <img src="images/app-screenshot.png" alt="앱 스크린샷" style="width: 100%; max-width: 400px;">
+            
+            <p><strong>사용 기술:</strong> Flutter, Firebase</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/username/project2">링크</a></p>
+        </div>
+    </div>
+</body>
+</html>
