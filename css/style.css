@@ -695,14 +695,22 @@ a:hover {
     border-color: transparent;
 }
 
-.project-card:hover .project-shape,
+
+.project-card:hover .project-shape {
+    /* 도형은 절대 위치 유지 */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    transform: none; /* 도형이 카드와 함께 움직이지 않도록 */
+}
+
 .project-card:hover h3,
 .project-card:hover p {
     position: relative;
     z-index: 2;
     color: white;
 }
-
 .project-card[data-color="#D3ECCD"]:hover h3,
 .project-card[data-color="#D3ECCD"]:hover p {
     color: #212121;
@@ -712,7 +720,7 @@ a:hover {
 .project-shape {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 20px; 
     width: 40px;
     height: 40px;
     z-index: 2;
