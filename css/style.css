@@ -25,9 +25,9 @@ body {
     transition: all 0.3s ease; 
 }
 .navbar.scrolled {
-    background: rgba(13, 94, 166, 0.95);
+    background: rgba(33, 33, 33, 0.95);
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(13, 94, 166, 0.3);
+    box-shadow: 0 2px 10px rgba(33, 33, 33, 0.3);
 }
 .navbar-container {
     max-width: 1200px;
@@ -48,7 +48,7 @@ body {
 }
 
 .navbar .logo:hover {
-    color: #EAA64D;
+    color: #E67514;
 }
 
 .navbar .nav-links {
@@ -66,16 +66,16 @@ body {
     border-radius: 20px;
 }
 .navbar.scrolled .nav-links a.active {
-    color: #0D5EA6;
-    background-color: #EAA64D;
+    color: #212121;
+    background-color: #E67514;
 }
 .navbar:not(.scrolled) .nav-links a.active {
-    color: #EAA64D;
+    color: #E67514;
     background-color: rgba(255, 255, 255, 0.2);
 }
 .navbar .nav-links a:hover {
-    color: #0D5EA6;
-    background-color: #EAA64D;
+    color: #212121;
+    background-color: #E67514;
 }
 
 /* 메인 컨테이너 */
@@ -89,7 +89,7 @@ body {
     background: white;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(13, 94, 166, 0.1);
+    box-shadow: 0 4px 20px rgba(33, 33, 33, 0.1);
     margin-bottom: 30px;
 }
 
@@ -103,7 +103,7 @@ body {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2.5em;
-    color: #0D5EA6;
+    color: #212121;
     position: relative;
 }
 
@@ -115,7 +115,7 @@ body {
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background: linear-gradient(90deg, #EAA64D, #C78A3B);
+    background: linear-gradient(90deg, #E67514, #06923E);
     border-radius: 2px;
 }
 
@@ -128,8 +128,8 @@ body {
     justify-content: center;
     text-align: center;
     background: linear-gradient(
-        rgba(13, 94, 166, 0.7),
-        rgba(13, 94, 166, 0.8)
+        rgba(33, 33, 33, 0.7),
+        rgba(33, 33, 33, 0.8)
     ),
     url('../images/home.jpg');
     background-size: cover;
@@ -157,20 +157,20 @@ body {
 }
 
 .home-content .highlight {
-    color: #EAA64D; /* 주 포인트 색상 */
+    color: #E67514; /* 주 포인트 색상 */
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
 .home-content .name {
-    color: #EAA64D; /* 더 진한 오렌지톤으로 변경 */
+    color: #E67514; /* 오렌지 색상으로 변경 */
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
 .home-content .role {
     font-size: 1.4em;
-    color: #EAA64D;
+    color: #E67514;
     font-weight: 600;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     margin-bottom: 30px;
@@ -188,7 +188,7 @@ body {
     opacity: 0.95;
 }
 .home-content .description strong {
-    color: #EAA64D; /* 포인트 컬러로 강조 */
+    color: #E67514; /* 포인트 컬러로 강조 */
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
 }
@@ -204,8 +204,8 @@ body {
     align-items: center;
     justify-content: flex-start;
     background: linear-gradient(
-        rgba(234, 166, 77, 0.7),
-        rgba(199, 138, 59, 0.8)
+        rgba(33, 33, 33, 0.8),
+        rgba(66, 66, 66, 0.9)
     ),
     url('../images/about.png');
     background-size: cover;
@@ -226,7 +226,7 @@ body {
     margin: 0;
     z-index: 999;
     text-align: left;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transform: translateX(-200px); 
     opacity: 0;
     transition: all 0.3s ease;
@@ -261,7 +261,7 @@ body {
 }
 
 .about-intro h3 {
-    color: #0D5EA6;
+    color: #212121;
     font-size: 1.4em;
     margin-bottom: 25px;
     font-weight: 600;
@@ -279,9 +279,9 @@ body {
 }
 
 .about-intro strong {
-    color: #0D5EA6;
+    color: #06923E;
     font-weight: bold;
-    text-shadow: 1px 1px 3px rgb(0, 0, 0,1);
+    
 }
 
 .about-keywords {
@@ -293,7 +293,7 @@ body {
 }
 
 .keyword {
-    background: linear-gradient(135deg, #0D5EA6, #1a6bb8);
+    background: linear-gradient(135deg, #212121, #333333);
     color: white;
     padding: 12px 20px;
     border-radius: 25px;
@@ -305,12 +305,12 @@ body {
 }
 
 .keyword:hover {
-    background: linear-gradient(135deg, #EAA64D, #C78A3B);
+    background: linear-gradient(135deg, #E67514, #D3660F);
     transform: translateY(-3px);
 }
 
 .interview-section h3 {
-    color: #0D5EA6;
+    color: #06923E;
     margin-bottom: 30px;
     font-size: 1.6em;
     text-align: center;
@@ -340,7 +340,7 @@ body {
 }
 
 .interview-card h4 {
-    color: #0D5EA6;
+    color: white;
     margin-bottom: 15px;
     font-size: 1.1em;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
@@ -355,8 +355,9 @@ body {
 }
 
 .interview-card strong {
-    color: #0D5EA6;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    color: #06923E;
+    text-shadow: 1px 1px 3px rgba(0,0,0,1);
+    font-weight: bold;
 }
 
 
@@ -365,7 +366,7 @@ body {
 .project {
     margin-bottom: 30px;
     padding: 25px;
-    border: 2px solid #EAA64D;
+    border: 2px solid #E67514;
     border-radius: 10px;
     background: #fefefe;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -373,11 +374,11 @@ body {
 
 .project:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(13, 94, 166, 0.15);
+    box-shadow: 0 8px 25px rgba(33, 33, 33, 0.15);
 }
 
 .project h3 {
-    color: #0D5EA6;
+    color: #212121;
     margin-bottom: 15px;
 }
 
@@ -401,6 +402,50 @@ body {
 }
 
 /* 스킬 섹션 */
+#skills {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        rgba(230, 117, 20, 0.9),
+        rgba(211, 102, 15, 0.9)
+    );
+    color: white;
+    padding: 80px 0;
+}
+
+#skills .container {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: white;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#skills h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #212121, #333333);
+    border-radius: 2px;
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -409,40 +454,156 @@ body {
 }
 
 .skill-item {
-    background: linear-gradient(135deg, #0D5EA6, #1a6bb8);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     padding: 25px;
     border-radius: 12px;
     text-align: center;
     color: white;
     transition: transform 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .skill-item:hover {
     transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
 
 .skill-item h3 {
-    color: #EAA64D;
+    color: #212121;
     margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    font-weight: 600;
 }
 
+.skill-item p {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+/* Archiving 섹션 */
+#archiving {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        rgba(6, 146, 62, 0.9),
+        rgba(4, 120, 51, 0.9)
+    );
+    color: white;
+    padding: 80px 0;
+}
+
+#archiving .container {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+#archiving h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: white;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#archiving h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #E67514, #212121);
+    border-radius: 2px;
+}
+
+.archiving-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.archive-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.archive-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.archive-item h3 {
+    color: #E67514;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    font-weight: 600;
+}
+
+.archive-item p {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.archive-item .archive-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #E67514, #D3660F);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    text-shadow: none;
+}
+
+.archive-item .archive-link:hover {
+    background: linear-gradient(135deg, #D3660F, #B55C0C);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(230, 117, 20, 0.4);
+    color: white;
+}
 /* 링크 스타일 */
 a {
-    color: #0D5EA6;
+    color: #212121;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #EAA64D;
+    color: #E67514;
 }
 
 /* 버튼 스타일 */
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background: linear-gradient(135deg, #EAA64D, #C78A3B);
+    background: linear-gradient(135deg, #E67514, #D3660F);
     color: white;
     text-decoration: none;
     border-radius: 25px;
@@ -453,14 +614,14 @@ a:hover {
 }
 
 .btn:hover {
-    background: linear-gradient(135deg, #C78A3B, #A16D28);
+    background: linear-gradient(135deg, #D3660F, #B55C0C);
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(234, 166, 77, 0.4);
+    box-shadow: 0 4px 15px rgba(230, 117, 20, 0.4);
 }
 /* 네비게이션 활성화 스타일 */
 .navbar .nav-links a.active {
-    color: #0D5EA6;
-    background-color: #EAA64D;
+    color: #212121;
+    background-color: #E67514;
 }
 
 /* 반응형 디자인 */
