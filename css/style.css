@@ -814,6 +814,89 @@ a:hover {
     transform: scale(1.1);
 }
 
+/* Career 섹션 스타일 */
+#career {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+#career .container {
+    background: none;
+    border-radius: 0; 
+    box-shadow: none;
+    padding: 60px;
+}
+
+.career-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.career-category {
+    margin-bottom: 50px;
+}
+
+.career-category:last-child {
+    margin-bottom: 0;
+}
+
+.career-category h3 {
+    color: #E67514;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #E67514;
+}
+
+.career-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.career-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #06923E;
+    transition: all 0.3s ease;
+}
+
+.career-item:hover {
+    background: #f0f1f2;
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(33, 33, 33, 0.1);
+}
+
+.career-period {
+    font-size: 0.95em;
+    font-weight: 600;
+    color: #06923E;
+    min-width: 140px;
+    background: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #06923E;
+}
+
+.career-details h4 {
+    color: #212121;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.career-details p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0;
+}
 
 /* 반응형 디자인 */
 @media (max-width: 1240px) {
@@ -967,6 +1050,27 @@ a:hover {
         height: 25px;
     }
 }
+@media (max-width: 768px) {
+    #career .container {
+        padding: 40px 30px;
+    }
+    
+    .career-item {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .career-period {
+        min-width: auto;
+        align-self: flex-start;
+    }
+    
+    .career-category h3 {
+        font-size: 1.5em;
+        margin-bottom: 25px;
+    }
+}
 @media (max-width: 480px) {
     .navbar-container {
         padding: 0 15px;
@@ -1065,5 +1169,23 @@ a:hover {
     .tech-logo {
         width: 22px;
         height: 22px;
+    }
+}
+@media (max-width: 480px) {
+    #career .container {
+        padding: 30px 20px;
+    }
+    
+    .career-item {
+        padding: 18px;
+    }
+    
+    .career-details h4 {
+        font-size: 1.1em;
+    }
+    
+    .career-period {
+        font-size: 0.9em;
+        padding: 6px 12px;
     }
 }
