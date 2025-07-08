@@ -362,44 +362,7 @@ body {
 
 
 
-/* 프로젝트 스타일 */
-.project {
-    margin-bottom: 30px;
-    padding: 25px;
-    border: 2px solid #E67514;
-    border-radius: 10px;
-    background: #fefefe;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
 
-.project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(33, 33, 33, 0.15);
-}
-
-.project h3 {
-    color: #212121;
-    margin-bottom: 15px;
-}
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-}
 
 /* 스킬 섹션 */
 #skills {
@@ -647,6 +610,232 @@ a:hover {
     background-color: #E67514;
 }
 
+/* Projects 섹션 - 검은색 테마 */
+#projects {
+    background: #1a1a1a;
+    color: white;
+    min-height: 100vh;
+    padding: 80px 0;
+}
+
+#projects .container {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+#projects h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 50px;
+}
+
+#projects h2::after {
+    background: linear-gradient(90deg, #E67514, #06923E);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    position: relative;
+    background: #2a2a2a;
+    border-radius: 15px;
+    padding: 30px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s ease;
+    z-index: 1;
+}
+
+.project-card:hover::before {
+    left: 0;
+}
+
+.project-card[data-color="#E67514"]:hover::before {
+    background: linear-gradient(135deg, #E67514, #D3660F);
+}
+
+.project-card[data-color="#212121"]:hover::before {
+    background: linear-gradient(135deg, #212121, #333333);
+}
+
+.project-card[data-color="#06923E"]:hover::before {
+    background: linear-gradient(135deg, #06923E, #048733);
+}
+
+.project-card[data-color="#D3ECCD"]:hover::before {
+    background: linear-gradient(135deg, #D3ECCD, #B8E0A8);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    border-color: transparent;
+}
+
+.project-card:hover .project-shape,
+.project-card:hover h3,
+.project-card:hover p {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.project-card[data-color="#D3ECCD"]:hover h3,
+.project-card[data-color="#D3ECCD"]:hover p {
+    color: #212121;
+}
+
+/* 도형 스타일 */
+.project-shape {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.circle {
+    background: #E67514;
+    border-radius: 50%;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid #212121;
+    background: transparent;
+}
+
+.hexagon {
+    width: 40px;
+    height: 23px;
+    background: #06923E;
+    position: relative;
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 12px solid #06923E;
+}
+
+.hexagon:after {
+    top: 100%;
+    border-top: 12px solid #06923E;
+}
+
+.diamond {
+    width: 40px;
+    height: 40px;
+    background: #D3ECCD;
+    transform: rotate(45deg);
+}
+
+.square {
+    background: #E67514;
+    border-radius: 5px;
+}
+
+.pentagon {
+    position: relative;
+    width: 36px;
+    height: 27px;
+    background: #212121;
+}
+
+.pentagon:before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 8px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 12px solid #212121;
+}
+
+/* 프로젝트 카드 내용 */
+.project-card h3 {
+    color: white;
+    font-size: 1.4em;
+    margin: 60px 0 15px 0;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    z-index: 2;
+    position: relative;
+}
+
+.project-card p {
+    color: #ccc;
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+    z-index: 2;
+    position: relative;
+}
+
+/* 기술 로고 */
+.tech-logos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: auto;
+    z-index: 2;
+    position: relative;
+}
+
+.tech-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    filter: grayscale(1) brightness(0.8);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .tech-logo {
+    filter: grayscale(0) brightness(1);
+    transform: scale(1.1);
+}
+
+
 /* 반응형 디자인 */
 @media (max-width: 1240px) {
     .navbar-container {
@@ -764,7 +953,41 @@ a:hover {
         font-size: 0.9em;
     }
 }
+@media (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
 
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .project-card {
+        padding: 25px;
+        min-height: 300px;
+    }
+    
+    .project-shape {
+        width: 35px;
+        height: 35px;
+        top: 15px;
+        right: 15px;
+    }
+    
+    .project-card h3 {
+        margin: 50px 0 12px 0;
+        font-size: 1.2em;
+    }
+    
+    .tech-logo {
+        width: 25px;
+        height: 25px;
+    }
+}
 @media (max-width: 480px) {
     .navbar-container {
         padding: 0 15px;
@@ -835,5 +1058,33 @@ a:hover {
     
     .skill-item {
         min-height: 100px;
+    }
+}
+@media (max-width: 480px) {
+    #projects .container {
+        padding: 30px 20px;
+    }
+    
+    .project-card {
+        padding: 20px;
+        min-height: 280px;
+    }
+    
+    .project-shape {
+        width: 30px;
+        height: 30px;
+        top: 12px;
+        right: 12px;
+    }
+    
+    .triangle {
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 26px solid #212121;
+    }
+    
+    .tech-logo {
+        width: 22px;
+        height: 22px;
     }
 }

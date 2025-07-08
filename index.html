@@ -47,7 +47,7 @@
             <div class="about-intro">
                 <h3></h3>
                 <p>다양한 팀 프로젝트에서 <strong>리더십</strong>을 발휘하며 <strong>설득력 있는 커뮤니케이션</strong>과 <strong>책임감</strong>을 바탕으로 성과를 창출해온 개발자입니다.<br>
-                <strong>아이디어 도출</strong>부터 <strong>주도적인 일처리</strong>까지, 프로젝트의 전 과정에서 팀을 이끌며 각종 대회 수상과 실제 기업 생산 라인 기여 경험을 쌓았습니다.</p>
+                <strong>아이디어 도출</strong>부터 <strong>주도적인 일처리</strong>까지, 프로젝트의 전 과정에서 팀을 이끌며  <strong>각종 대회 수상</strong>과 <strong>실제 기업 생산 라인 기여 경험</strong>을 쌓았습니다.</p>
                 
                 <div class="about-keywords">
                     <span class="keyword">설득력</span>
@@ -131,38 +131,80 @@
     </div>
 </section>
 
-        <!-- Projects 섹션 -->
-        <section id="projects" class="section">
-            <div class="container">
-                <h2>PROJECTS</h2>
-                
-                <div class="project">
-                    <h3>프로젝트 1</h3>
-                    <p>사이트입니다.</p>
-                    
-                    <!-- YouTube 동영상 임베드 -->
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/c5FW7wBjHHk" 
-                                frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    
-                    <p><strong>사용 기술:</strong> React, Node.js, MongoDB</p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/username/project1" class="btn">링크</a></p>
-                </div>
-
-                <div class="project">
-                    <h3>프로젝트 2: 앱</h3>
-                    <p>앱입니다.</p>
-                    
-                    <!-- 이미지 추가 -->
-                    <img src="images/app-screenshot.png" alt="앱 스크린샷" style="width: 100%; max-width: 400px; border-radius: 8px;">
-                    
-                    <p><strong>사용 기술:</strong> Flutter, Firebase</p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/username/project2" class="btn">링크</a></p>
+       <!-- Projects 섹션 -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2>PROJECTS</h2>
+        
+        <div class="projects-grid">
+            <div class="project-card" data-color="#E67514">
+                <div class="project-shape circle"></div>
+                <h3>Ai를 활용한 영상요약 동영상 플랫폼</h3>
+                <p>AI모델을 활용하여 영상의 핵심 내용을 파악하고 중요한 장면들을 추출해 재생 시간을 단축하는 영상요약 시스템을 개발했습니다. BLIP모델과 자연어 처리 모델 등 6가지 AI 모델을 활용하여 정확한 요약 기능과 사용자 친화적인 플랫폼을 구현했습니다.</p>
+                <div class="tech-logos">
+                    <img src="images/파이썬.png" alt="Python" class="tech-logo">
+                    <img src="images/할콘.png" alt="Halcon" class="tech-logo">
+                    <img src="images/오픈.png" alt="OpenCV" class="tech-logo">
                 </div>
             </div>
-        </section>
 
+            <div class="project-card" data-color="#06923E">
+                <div class="project-shape triangle"></div>
+                <h3>TCP/IP 통신 프로그램</h3>
+                <p>제조업 생산 라인에서 사용되는 실시간 데이터 통신 프로그램을 C#과 WPF로 개발했습니다. 안정적인 멀티스레드 통신을 구현했습니다.</p>
+                <div class="tech-logos">
+                    <img src="images/csharp-logo.png" alt="C#" class="tech-logo">
+                    <img src="images/wpf-logo.png" alt="WPF" class="tech-logo">
+                    <img src="images/dotnet-logo.png" alt=".NET" class="tech-logo">
+                </div>
+            </div>
+
+            <div class="project-card" data-color="#D3ECCD">
+                <div class="project-shape hexagon"></div>
+                <h3>AI 기반 품질 분석</h3>
+                <p>머신러닝을 활용한 제품 품질 예측 시스템을 개발했습니다. 생산 데이터를 분석하여 불량률을 사전에 예측하는 모델을 구축했습니다.</p>
+                <div class="tech-logos">
+                    <img src="images/tensorflow-logo.png" alt="TensorFlow" class="tech-logo">
+                    <img src="images/python-logo.png" alt="Python" class="tech-logo">
+                    <img src="images/jupyter-logo.png" alt="Jupyter" class="tech-logo">
+                </div>
+            </div>
+
+            <div class="project-card" data-color="#E67514">
+                <div class="project-shape diamond"></div>
+                <h3>MFC 장비 제어 프로그램</h3>
+                <p>산업용 장비 제어를 위한 MFC 기반 프로그램을 개발했습니다. 실시간 모니터링과 자동화 제어 기능을 구현했습니다.</p>
+                <div class="tech-logos">
+                    <img src="images/cpp-logo.png" alt="C++" class="tech-logo">
+                    <img src="images/mfc-logo.png" alt="MFC" class="tech-logo">
+                    <img src="images/visual-studio-logo.png" alt="Visual Studio" class="tech-logo">
+                </div>
+            </div>
+
+            <div class="project-card" data-color="#06923E">
+                <div class="project-shape square"></div>
+                <h3>웹 기반 모니터링 시스템</h3>
+                <p>Blazor를 사용하여 실시간 생산 현황을 모니터링할 수 있는 웹 대시보드를 개발했습니다. 직관적인 UI/UX로 운영 효율성을 개선했습니다.</p>
+                <div class="tech-logos">
+                    <img src="images/blazor-logo.png" alt="Blazor" class="tech-logo">
+                    <img src="images/csharp-logo.png" alt="C#" class="tech-logo">
+                    <img src="images/signalr-logo.png" alt="SignalR" class="tech-logo">
+                </div>
+            </div>
+
+            <div class="project-card" data-color="#D3ECCD">
+                <div class="project-shape pentagon"></div>
+                <h3>자동화 테스트 솔루션</h3>
+                <p>Cognex 비전 시스템과 연동하여 자동화된 검사 프로세스를 구축했습니다. 검사 시간을 50% 단축하고 정확도를 향상시켰습니다.</p>
+                <div class="tech-logos">
+                    <img src="images/cognex-logo.png" alt="Cognex" class="tech-logo">
+                    <img src="images/java-logo.png" alt="Java" class="tech-logo">
+                    <img src="images/plc-logo.png" alt="PLC" class="tech-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
         <!-- Career 섹션 -->
         <section id="career" class="section">
             <div class="container">
