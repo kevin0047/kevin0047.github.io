@@ -741,31 +741,13 @@ a:hover {
     background: transparent;
 }
 
-.hexagon {
-    width: 40px;
-    height: 23px;
+.star {
     background: #06923E;
-    position: relative;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
 
-.hexagon:before,
-.hexagon:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-}
-
-.hexagon:before {
-    bottom: 100%;
-    border-bottom: 12px solid #06923E;
-}
-
-.hexagon:after {
-    top: 100%;
-    border-top: 12px solid #06923E;
-}
 
 .diamond {
     width: 40px;
@@ -779,24 +761,13 @@ a:hover {
     border-radius: 5px;
 }
 
-.pentagon {
-    position: relative;
-    width: 36px;
-    height: 27px;
+.plus {
     background: #212121;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
 }
 
-.pentagon:before {
-    content: "";
-    position: absolute;
-    top: -12px;
-    left: 8px;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 12px solid #212121;
-}
 
 /* 프로젝트 카드 내용 */
 .project-card h3 {
