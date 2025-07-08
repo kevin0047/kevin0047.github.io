@@ -404,7 +404,7 @@ body {
 /* 스킬 섹션 */
 #skills {
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh; /* 100vh에서 80vh로 줄임 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -413,7 +413,7 @@ body {
         rgba(211, 102, 15, 0.9)
     );
     color: white;
-    padding: 80px 0;
+    padding: 60px 0; /* 80px에서 60px로 줄임 */
 }
 
 #skills .container {
@@ -422,12 +422,12 @@ body {
     border-radius: 0;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 30px; /* 40px에서 30px로 줄임 */
 }
 
 #skills h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px; /* 40px에서 30px로 줄임 */
     font-size: 2.5em;
     color: white;
     position: relative;
@@ -448,21 +448,28 @@ body {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* 3열 고정 */
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 20px; /* 30px에서 20px로 줄임 */
+    max-width: 900px; /* 최대 너비 제한 */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .skill-item {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    padding: 25px;
+    padding: 20px; /* 25px에서 20px로 줄임 */
     border-radius: 12px;
     text-align: center;
     color: white;
     transition: transform 0.3s;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    min-height: 140px; /* 최소 높이 설정으로 균등한 크기 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .skill-item:hover {
@@ -473,19 +480,22 @@ body {
 
 .skill-item h3 {
     color: #212121;
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* 10px에서 8px로 줄임 */
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     font-weight: 600;
+    font-size: 1.1em;
 }
 
 .skill-item p {
     color: white;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    font-size: 0.95em;
+    line-height: 1.4;
 }
 /* Archiving 섹션 */
 #archiving {
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh; /* 100vh에서 80vh로 줄임 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -494,7 +504,7 @@ body {
         rgba(4, 120, 51, 0.9)
     );
     color: white;
-    padding: 80px 0;
+    padding: 60px 0; /* 80px에서 60px로 줄임 */
 }
 
 #archiving .container {
@@ -503,12 +513,12 @@ body {
     border-radius: 0;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 30px; /* 40px에서 30px로 줄임 */
 }
 
 #archiving h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px; /* 40px에서 30px로 줄임 */
     font-size: 2.5em;
     color: white;
     position: relative;
@@ -529,21 +539,29 @@ body {
 
 .archiving-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr); /* 2열 고정 배치 */
+    gap: 40px; /* 30px에서 40px로 늘림 */
+    margin-top: 30px; /* 50px에서 30px로 줄임 */
+    max-width: 800px; /* 최대 너비 제한 */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .archive-item {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    padding: 30px;
+    padding: 35px; /* 30px에서 35px로 늘림 */
     border-radius: 15px;
     text-align: center;
     color: white;
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    min-height: 200px; /* 최소 높이 설정으로 균등한 크기 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .archive-item:hover {
@@ -555,7 +573,7 @@ body {
 .archive-item h3 {
     color: #E67514;
     margin-bottom: 15px;
-    font-size: 1.4em;
+    font-size: 1.5em; /* 1.4em에서 1.5em로 늘림 */
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     font-weight: 600;
 }
@@ -563,13 +581,17 @@ body {
 .archive-item p {
     color: white;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-    margin-bottom: 20px;
+    margin-bottom: 25px; /* 20px에서 25px로 늘림 */
     line-height: 1.6;
+    font-size: 1.05em;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 .archive-item .archive-link {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 14px 28px; /* 12px 25px에서 14px 28px로 늘림 */
     background: linear-gradient(135deg, #E67514, #D3660F);
     color: white;
     text-decoration: none;
@@ -579,6 +601,7 @@ body {
     border: none;
     cursor: pointer;
     text-shadow: none;
+    font-size: 1.05em;
 }
 
 .archive-item .archive-link:hover {
@@ -721,6 +744,27 @@ a:hover {
         margin-bottom: 12px;
     }
 }
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        max-width: 100%;
+    }
+    
+    .skill-item {
+        padding: 18px;
+        min-height: 120px;
+    }
+    
+    .skill-item h3 {
+        font-size: 1em;
+    }
+    
+    .skill-item p {
+        font-size: 0.9em;
+    }
+}
+
 @media (max-width: 480px) {
     .navbar-container {
         padding: 0 15px;
@@ -781,5 +825,15 @@ a:hover {
     
     .interview-card p {
         font-size: 0.95em;
+    }
+}
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .skill-item {
+        min-height: 100px;
     }
 }
