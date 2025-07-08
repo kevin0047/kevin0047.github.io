@@ -24,22 +24,20 @@ window.addEventListener('scroll', function() {
     }
     
     // 어바웃미 타이틀 표시/숨김 제어
-    if (aboutSection) {
-        const aboutTop = aboutSection.offsetTop;
-        const aboutBottom = aboutTop + aboutSection.offsetHeight;
-        const scrollPos = window.pageYOffset;
-        
-
-        const showOffset = 200;
-
-        const hideOffset = -100;
-        
-        if (scrollPos >= (aboutTop - showOffset) && scrollPos <= (aboutBottom + hideOffset)) {
-            aboutTitle.classList.add('show');
-        } else {
-            aboutTitle.classList.remove('show');
-        }
+if (aboutSection) {
+    const aboutTop = aboutSection.offsetTop;
+    const aboutBottom = aboutTop + aboutSection.offsetHeight;
+    const scrollPos = window.pageYOffset;
+    
+    const showOffset = 200;
+    const hideOffset = -100;
+    
+    if (scrollPos >= (aboutTop - showOffset) && scrollPos <= (aboutBottom + hideOffset)) {
+        aboutTitle.classList.add('show');
+    } else {
+        aboutTitle.classList.remove('show');
     }
+}
     
     // 현재 섹션 하이라이트
     let current = '';
